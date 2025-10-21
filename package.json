@@ -1,0 +1,37 @@
+{
+  "name": "distributed-system",
+  "version": "1.0.0",
+  "description": "Sistema distribuido para gestión de usuarios, archivos y auditoría",
+  "type": "module",
+  "scripts": {
+    "start:auditor": "node src/servers/auditor-server.js",
+    "start:balancer": "node src/servers/balancer-server.js",
+    "start:node1": "node src/servers/node-server.js 3001 node1",
+    "start:node2": "node src/servers/node-server.js 3002 node2",
+    "start:node3": "node src/servers/node-server.js 3003 node3",
+    "test:client": "node src/client/test-client.js"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "bcryptjs": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "lucide-react": "^0.454.0",
+    "next": "15.2.4",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "uuid": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.5",
+    "tailwindcss": "4.1.15",
+    "typescript": "^5"
+  }
+}
